@@ -6,7 +6,7 @@
 
 <p>O React combina HTML com funcionalidade JavaScript em sua própria linguagem markup, chamada JSX. Ele também facilita a gestão do fluxo de dados por toda a aplicação.</p>
 
-<p>Neste curso, você vai aprender a criar diferentes componentes do React, a gerenciar dados na forma de propriedades de estado ("state props"), a utilizar diferentes métodos de ciclo de vida, como o <mark>componentDidMount</mark>, e muito mais.</p>
+<p>Neste curso, você vai aprender a criar diferentes componentes do React, a gerenciar dados na forma de propriedades de estado ("state props"), a utilizar diferentes métodos de ciclo de vida, como o 'componentDidMount', e muito mais.</p>
 
 <hr>
 
