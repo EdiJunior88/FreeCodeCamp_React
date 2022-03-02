@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Criar um elemento JSX complexo</title>
+</head>
+<body>
+  <h1>Criar um elemento JSX complexo</h1>
+
+  <p>O último desafio foi um exemplo simples de JSX, mas JSX também pode representar HTML mais complexo.</p>
+
+  <p>Uma coisa importante a saber sobre JSX aninhado é que ele deve retornar um único elemento.</p>
+
+  <p>Este único elemento pai envolveria todos os outros níveis de elementos aninhados.</p>
+
+  <p>Por exemplo, vários elementos JSX escritos como irmãos sem elemento encapsulador pai não vão transpilar.</p>
+
+  <p>Exemplo:</p>
+
+  <p><strong>JSX válido:</strong></p>
+
+  <pre>
+    &ltdiv&gt
+      &ltp&gtParagraph One&lt/p&gt
+      &ltp&gtParagraph Two&lt/p&gt
+      &ltp&gtParagraph Three&lt/p&gt
+    &lt/div&gt
+  </pre>
+
+  <p><strong>JSX inválido:</strong></p>
+
+  <pre>
+    &ltp&gtParagraph One&lt/p&gt
+    &ltp&gtParagraph Two&lt/p&gt
+    &ltp&gtParagraph Three&lt/p&gt
+  </pre>
+
+  <p>Defina uma nova constante <code>JSX</code> que renderiza uma <code>div</code> a qual contém os elementos a seguir em ordem:</p>
+
+  <p>Um <code>h1</code>, um <code>p</code>, e uma lista não ordenada que contém três itens <code>li</code>. Você pode incluir qualquer texto que você quiser dentro de cada elemento.</p>
+
+  <p><strong>Observação</strong>: ao renderizar vários elementos como este, você pode envolver todos entre parênteses, mas não é estritamente necessário. Note também que este desafio usa uma tag <code>div</code> para encapsular todos os elementos filhos dentro de um único elemento pai. Se você remover a <code>div</code>, o JSX não será mais transpilável. Tenha isso em mente, uma vez que ele também será aplicado quando você retornar elementos JSX em componentes React.</p>
+</body>
+</html>
