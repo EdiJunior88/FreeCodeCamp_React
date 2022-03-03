@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Aprender sobre tags JSX com autofechamento</title>
+</head>
+<body>
+  <h1>Aprender sobre tags JSX com autofechamento</h1>
+
+  <p>Até agora, você viu como o JSX difere do HTML de uma forma importante com o uso de className em vez de class para definir classes HTML.</p>
+
+  <p>Outra forma importante em que o JSX difere do HTML é na ideia da tag de autofechamento.</p>
+
+  <p>Em HTML, quase todas as tags possuem uma tag de abertura e fechamento: <code>&ltdiv&gt&lt/div&gt</code>; a tag de fechamento sempre tem uma barra para frente antes do nome da tag que está fechando. No entanto, há instâncias especiais no HTML chamadas de "tags de autofechamento", ou tags que não requerem uma tag de abertura e fechamento antes que outra tag possa iniciar.</p>
+
+  <p>Por exemplo, a tag de quebra de linha pode ser escrita como &ltbr&gt ou como &ltbr /&gt, mas nunca deve ser escrita como &ltbr&gt&lt/br&gt, uma vez que não contém nenhum conteúdo.</p>
+
+  <p>Em JSX, as regras são um pouco diferentes. Qualquer elemento JSX pode ser escrito com uma tag autofechada, e todo elemento deve ser fechado. A tag de quebra de linha, por exemplo, deve sempre ser escrita como <code>&ltbr /&gt</code> para ser JSX válido que pode ser transpilado. Um <code>&ltdiv&gt</code>, por outro lado, pode ser escrito como <code>&ltdiv /&gt</code> ou <code>&ltdiv&gt&lt/div&gt</code>. A diferença é que na primeira versão de sintaxe não há como incluir nada no <code>&ltdiv /&gt</code>. Você verá em desafios posteriores que essa sintaxe é útil ao renderizar componentes React.</p>
+
+  <p>Corrija os erros no editor de código para que ele seja JSX válido e transpilado com sucesso. Certifique-se de não alterar nenhum conteúdo - você só precisa fechar as tags onde elas são necessárias.</p>
+</body>
+</html>
