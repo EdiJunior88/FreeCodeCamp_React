@@ -1,0 +1,11 @@
+code {
+  background: rgb(218, 218, 218);
+  font-weight: bolder;
+  padding: 3px;
+}
+
+pre {
+  background: rgba(177, 255, 194, 0.699);
+  font-weight: bolder;
+  padding-top: 10px;
+}

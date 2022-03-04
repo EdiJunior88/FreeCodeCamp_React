@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Criar um componente com composição</title>
+</head>
+<body>
+  <h1>Criar um componente com composição</h1>
+
+  <p>Agora vamos ver como podemos compor vários componentes React juntos. Imagine que você está construindo um aplicativo e criou três componentes: uma <code>Navbar</code>, um <code>Dashboard</code>, e um <code>Footer</code>.</p>
+
+  <p>Para compor esses componentes juntos, você poderia criar um componente <code>App</code> pai que renderiza cada um desses três componentes como <i>filhos</i>. Para renderizar um componente como filho em um componente React, você inclui o nome do componente escrito como uma tag HTML personalizada no JSX. Por exemplo, no método <code>render</code> você pode escrever:</p>
+
+  <pre>
+    return (
+    &ltApp&gt
+      &ltNavbar /&gt
+      &ltDashboard /&gt
+      &ltFooter /&gt
+    &lt/App&gt
+    )
+  </pre>
+
+  <p>Quando o React encontra uma tag HTML personalizada que faz referência a outro componente (um nome de componente encapsulado em <code>&lt /&gt</code> como neste exemplo), ele renderiza a marcação para esse componente na localização da tag. Isso deve ilustrar a relação pai/filho entre o componente <code>App</code> e a <code>Navbar</code>, o <code>Dashboard</code>, e o <code>Footer</code>.</p>
+
+  <p>No editor de código, há um simples componente funcional chamado <code>ChildComponent</code> e um componente de classe chamado <code>ParentComponent</code>. Componha as duas juntas ao renderizar o <code>ChildComponent</code> dentro do <code>ParentComponent</code>. Certifique-se de fechar a tag <code>ChildComponent</code> com uma barra avançada.</p>
+
+  <p><strong>Observação</strong>: <code>ChildComponent</code> é definida com uma arrow function do ES6, porque esta é uma prática muito comum ao usar React. No entanto, é do conhecimento geral que se trata apenas de uma função. Se você não estiver familiarizado com a sintaxe de arrow function, consulte a seção de JavaScript.</p>
+</body>
+</html>
