@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Criar um componente do React</title>
+</head>
+<body>
+  <h1>Criar um componente do React</h1>
+
+  <p>A outra forma de definir um componente do React é com a sintaxe <code>class</code> do ES6. No exemplo a seguir, <code>Kitten</code> estende <code>React.Component</code>:</p>
+
+  <pre>
+    class Kitten extends React.Component {
+      constructor(props) {
+        super(props);
+      }
+
+      render() {
+        return (
+          &lth1&gtHi&lt/h1&gt
+        );
+      }
+    }
+  </pre>
+
+  <p>Isso cria a classe ES6 Kitten que estende a classe <code>React.Component.</code> Então a classe <code>Kitten</code> agora possui acesso a diversos recursos úteis do React, como local state e lifecycle hooks. Não se preocupe se você não estiver familiarizado com esses termos ainda, eles serão abordados em detalhes maiores nos desafios futuros. Também note que a classe <code>Kitten</code> possui um <code>constructor</code> definido dentro dele que chama <code>super()</code>. O construtor usa <code>super()</code> para chamar o construtor da classe pai, nesse caso <code>React.Component</code>. O construtor é um método especial usado durante a inicialização de objetos que são criados com a palavra-chave <code>class</code>. É uma boa prática chamar o <code>constructor</code> de um componente com <code>super</code>, e passar <code>props</code> para ambos. Isso garante que o componente é inicializado corretamente. Por agora, saiba que é padrão que esse código seja incluído. Em breve você verá outros usos para o construtor assim como para <code>props</code>.</p>
+
+  <p><code>MyComponent</code> é definido no editor de código usando a sintaxe de classe. Termine de escrever o método <code>render</code> para que ele retorne um elemento <code>div</code> que contém um <code>h1</code> com o texto <code>Hello React!</code>.</p>
+</body>
+</html>
