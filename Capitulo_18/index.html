@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Usar propTypes para definir os props que você espera</title>
+</head>
+
+<body>
+  <h1>Usar propTypes para definir os props que você espera</h1>
+
+  <p>React fornece recursos úteis de checagem de tipos para verificar se os componentes recebem propriedades do tipo correto. Por exemplo, o seu aplicativo faz uma chamada de API para recuperar dados que você espera estar em um array, que é então passado para um componente como uma prop. Você pode definir <code>propTypes</code> no seu componente para exigir que os dados sejam do tipo <code>array</code>. Isso lançará um aviso útil quando os dados forem de qualquer outro tipo.</p>
+
+  <p>É considerada uma boa prática definir <code>propTypes</code> quando você sabe o tipo de uma "prop" antes do tempo. Você pode definir uma propriedade <code>propTypes</code> para um componente da mesma forma que você definiu <code>defaultProps</code>. Fazer isso verificará se as "props" de uma determinada chave estão presentes com um determinado tipo. Aqui está um exemplo para exigir o tipo <code>function</code> para uma propriedade chamada <code>handleClick</code>:</p>
+
+  <pre>
+    MyComponent.propTypes = { handleClick: PropTypes.func.isRequired }
+  </pre>
+
+  <p>No exemplo acima, a parte <code>PropTypes.func</code> verifica se <code>handleClick</code> é uma função. Adicionar <code>isRequired</code> diz ao React que <code>handleClick</code> é uma propriedade necessária para esse componente. Você verá um aviso se essa propriedade não for fornecida. Também observe que <code>func</code> representa <code>function</code>. Entre os sete tipos primitivos de JavaScript, <code>function</code> e <code>boolean</code> (escrito como <code>bool</code>) são os únicos dois que usam ortografia incomum. Além dos tipos primitivos, existem outros tipos disponíveis. Por exemplo, você pode verificar que uma prop é um elemento React. Consulte a documentação para ver todas as opções.</p>
+
+  <p>Observação: a partir do React v15.5.0, <code>PropTypes</code> é importado independentemente do React, como: <code>import PropTypes from 'prop-types';</code></p>
+
+  <p>Defina <code>propTypes</code> para o componente <code>Items</code> para exigir <code>quantity</code> como uma propriedade e verifique se é do tipo <code>number</code>.</p>
+
+</body>
+
+</html>
