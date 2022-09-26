@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Passar um array como props</title>
+</head>
+
+<body>
+  <h1>Passar um array como props</h1>
+
+  <p>O último desafio demonstrou como passar informações de um componente pai para um componente filho como propriedades <code>props</code>. Este desafio analisa como matrizes podem ser passadas como <code>props</code>. Para passar um array para um elemento JSX, ele deve ser tratado como JavaScript e encapsulado em chaves.</p>
+
+  <pre>
+    &ltParentComponent&gt
+      &ltChildComponent colors={["green", "blue" , "red" ]} /&gt
+    &lt/ParentComponent&gt
+  </pre>
+
+  <p>O componente filho então tem acesso às propriedades <code>colors</code> do array. Métodos de array como <code>join()</code> podem ser usados ao acessar a propriedade. <code>const ChildComponent = (props) => &ltp&gt{props.colors.join(', ')}&lt/p&gt</code> Isto unirá todos os itens do array <code>colors</code> em uma string separada por vírgulas e produzirá: <code>&ltp&gtgreen, blue, red&lt/p&gt</code> Depois, aprenderemos sobre outros métodos comuns de renderizar arrays de dados em React.</p>
+
+  <p>Existem os componentes <code>List</code> e <code>ToDo</code> no editor de código. Ao renderizar cada <code>List</code> do componente <code>ToDo</code>, passe em uma propriedade <code>tasks</code> atribuída a um array de tarefas a fazer, por exemplo <code>["walk dog", "workout"]</code>. Em seguida, acesse o array <code>tasks</code> no componente <code>List</code>, mostrando seu valor dentro do elemento <code>p</code>. Use <code>join(", ")</code> para exibir o array <code>props.tasks</code> no elemento <code>p</code> como uma lista separada por vírgulas. A lista de hoje deveria ter pelo menos 2 tarefas e a de amanhã deveria ter pelo menos 3 tarefas.</p>
+</body>
+
+</html>
