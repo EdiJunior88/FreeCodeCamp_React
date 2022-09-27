@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Renderizar estado na interface de usuário de outra forma</title>
+</head>
+
+<body>
+  <h1>Renderizar estado na interface de usuário de outra forma</h1>
+
+  <p>Há outra forma de acessar o <code>state</code> em um componente. No método <code>render()</code>, antes da instrução <code>return</code>, você pode escrever JavaScript diretamente. Por exemplo, você poderia declarar funções, acessar dados de <code>state</code> ou <code>props</code>, executar computações nesses dados, entre outras coisas. Em seguida, você pode atribuir quaisquer dados para variáveis, que você tem acesso na instrução <code>return</code>.</p>
+
+  <p>No método de renderização do <code>MyComponent</code>, defina uma <code>const</code> chamada <code>name</code> e defina-a igual ao valor do nome no <code>state</code> do componente. Como você pode escrever JavaScript diretamente nesta parte do código, você não precisa incluir essa referência em chaves.</p>
+
+  <p>Em seguida, na instrução return, renderize este valor em uma tag <code>h1</code> usando a variável <code>name</code>. Lembre-se, você precisa usar a sintaxe JSX (chaves para JavaScript) na instrução de retorno.</p>
+
+</body>
+
+</html>
