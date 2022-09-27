@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Usar state para alternar um elemento</title>
+</head>
+
+<body>
+  <h1>Usar state para alternar um elemento</h1>
+
+  <p>Às vezes você pode precisar saber o estado anterior ao atualizar o estado. No entanto, atualizações de estado podem ser assíncronas - isso significa que React pode fazer várias chamadas <code>setState()</code> em uma única atualização. Isto significa que você não pode confiar no valor anterior de <code>this.state</code> ou <code>this.props</code> ao calcular o próximo valor. Então, você não deve usar códigos como este:</p>
+
+  <pre>
+    this.setState({
+      counter: this.state.counter + this.props.increment
+    });
+  </pre>
+
+  <p>Ao invés disso, você deve passar a <code>setState</code> uma função que permita acessar state e props. Usando uma função com <code>setState</code> garante que você está trabalhando com os valores mais atuais de state e props. Isto significa que o acima deve ser reescrito como:</p>
+
+  <pre>
+    this.setState((state, props) => ({
+      counter: state.counter + props.increment
+    }));
+  </pre>
+
+  <p>Você também pode usar um formulário sem <code>props</code> se você precisar apenas do <code>state</code>:</p>
+
+  <pre>
+    this.setState(state => ({
+      counter: state.counter + 1
+    }));
+  </pre>
+
+  <p>Observe que você tem que envolver o objeto literalmente entre parênteses, caso contrário, JavaScript pensa que é um bloco de código.</p>
+
+  <p><code>MyComponent</code> tem uma propriedade <code>visibility</code> que foi inicializada como <code>false</code>. O método de renderização retorna uma view se o valor de <code>visibility</code> for verdadeiro e uma view diferente se for falsa.</p>
+
+  <p>Atualmente, não há forma de atualizar a propriedade <code>visibility</code> no <code>state</code> do componente. O valor deve alternar entre verdadeiro e falso. Há um manipulador de cliques no botão que aciona um método de classe chamado <code>toggleVisibility()</code>. Passe uma função para <code>setState</code> para definir esse método para que o state de <code>visibility</code> alterne para o valor oposto quando o método for chamado. Se <code>visibility</code> for <code>false</code>, o método define para <code>true</code>, e vice-versa.</p>
+
+  <p>Finalmente, clique no botão para ver a renderização condicional do componente com base no seu <code>state</code>.</p>
+
+  <p><strong>Dica</strong>: não se esqueça de vincular a palavra-chave <code>this</code> ao método no <code>constructor</code>!</p>
+
+</body>
+
+</html>
