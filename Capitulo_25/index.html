@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Vincular 'this' para um método de classe</title>
+</head>
+
+<body>
+  <h1>Vincular 'this' para um método de classe</h1>
+
+  <p>Além de definir e atualizar <code>state</code>, você também pode definir métodos para o seu componente de classe. Um método de classe tipicamente precisa usar a palavra-chave <code>this</code> para que possa acessar as propriedades na classe (assim como <code>state</code> e <code>props</code>) dentro do escopo do método. Existem algumas maneiras para permitir que os métodos da sua classe acessem <code>this</code>.</p>
+
+  <p>Uma forma comum é explicitamente vincular <code>this</code> no construtor para que <code>this</code> torne-se vinculado aos métodos da classe quando o componente é inicializado. Você pode ter percebido que o último desafio usou <code>this.handleClick = this.handleClick.bind(this)</code> para o método <code>handleClick</code> no construtor. Em seguida, quando você chama uma função como <code>this.setState()</code> dentro do método da classe, <code>this</code> refere-se a classe e não será <code>undefined</code>.</p>
+
+  <p><strong>Observação</strong>: a palavra-chave <code>this</code> é um dos aspectos mais confusos do JavaScript mas ele exerce uma papel importante em React. Embora o seu comportamento aqui é completamente normal, essas aulas não são o lugar para uma análise profunda de <code>this</code> portanto, por favor consulte outras aulas se o conteúdo acima for confuso!</p>
+
+  <p>O editor de código possui um componente com um <code>state</code> que mantém o controle do texto. Também possui um método o qual o permite definir o texto para <code>You clicked!</code>. No entanto, o método não funciona porque está usando a palavra-chave <code>this</code> que é undefined. Corrija isso ao vincular explicitamente <code>this</code> ao método <code>handleClick()</code> no construtor do componente.</p>
+
+  <p>Em seguida, adicione um manipulador de clique ao elemento <code>button</code> no método de renderização. Ele deve acionar o método <code>handleClick()</code> quando o botão recebe um evento de clique. Lembre-se de que o método que você passou ao manipulador <code>onClick</code> precisa de chaves porque ele deve ser interpretado diretamente como JavaScript.</p>
+
+  <p>Assim que você completar os passos acima você deve ser capaz de clicar o botão e ver <code>You clicked!</code>.</p>
+
+</body>
+
+</html>
