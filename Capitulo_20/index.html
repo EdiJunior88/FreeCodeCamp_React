@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Revisar o uso de props com componentes funcionais sem estado</title>
+</head>
+
+<body>
+  <h1>Revisar o uso de props com componentes funcionais sem estado</h1>
+
+  <p>Exceto pelo último desafio, você tem passado "props" para componentes funcionais sem estado. Esses componentes agem como funções puras. Eles aceitam props como entrada e retornam a mesma view toda vez que eles são passados nas mesmas props. Você pode estar se perguntando o que é state, e o próximo desafio abordará isso com mais detalhes. Antes disso, aqui está uma revisão da terminologia para componentes.</p>
+
+  <p>Um <i>componente funcional stateless (sem estado)</i> é qualquer função que você escreve que aceita props e retorna JSX. Um <i>componente stateless (sem estado)</i>, por outro lado, é uma classe que estende <code>React.Component</code>, mas não usa estado interno (abordado no próximo desafio). Finalmente, um <i>componente stateful (com estado)</i> é um componente de classe que mantém seu próprio estado interno. Você pode ver componentes de estado referidos simplesmente como componentes ou componentes do React.</p>
+
+  <p>Um padrão comum é tentar minimizar statefulness e criar componentes funcionais sem estado, sempre que possível. Isso ajuda a conter sua gestão de estado para uma área específica de sua aplicação. Por sua vez, isso melhora o desenvolvimento e a manutenção do seu aplicativo, tornando mais fácil acompanhar como alterações no estado afetam seu comportamento.</p>
+
+  <p>O editor de código tem um componente <code>CampSite</code> que renderiza um componente <code>Camper</code> como filho. Defina o componente <code>Camper</code> e atribua a ele as propriedades padrão de <code>{ name: 'CamperBot' }</code>. Dentro do componente <code>Camper</code>, renderize qualquer código que você quiser, mas certifique-se de ter um elemento <code>p</code> que inclua apenas o valor name que é passado como uma <code>prop</code>. Finalmente, defina <code>propTypes</code> no componente <code>Camper</code> para exigir que o name seja fornecido como uma prop e verifique se é do tipo <code>string</code>.</p>
+
+</body>
+
+</html>
