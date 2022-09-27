@@ -1,18 +1,31 @@
-const Items = (props) => {
-  return <h1>Current Quantity of Items in Cart: {props.quantity}</h1>
-}
-
-Items.defaultProps = {
-  quantity: 0
-}
-
-class ShoppingCart extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
   }
   render() {
-    { /* Altere o código abaixo desta linha */ }
-    return <Items quantity = {10} />
-    { /* Altere o código acima desta linha */ }
+    return (
+      <div>
+        {/* Altere o código abaixo desta linha */}
+        <Welcome name='Edivaldo Junior' />
+        {/* Altere o código acima desta linha */}
+      </div>
+    );
   }
-};
+}
+
+class Welcome extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        {/* Altere o código abaixo desta linha */}
+        <p>
+          Hello, <strong>{this.props.name}</strong>!
+        </p>
+        {/* Altere o código acima desta linha */}
+      </div>
+    );
+  }
+}
