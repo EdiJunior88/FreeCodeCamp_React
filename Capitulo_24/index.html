@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Definir estado com this.setState</title>
+</head>
+
+<body>
+  <h1>Definir estado com this.setState</h1>
+
+  <p>Os desafios anteriores abordaram o <code>state</code> dos componentes e como inicializar state no <code>constructor</code>. Há também uma maneira de alterar o state do componente. React fornece um método para atualizar o componente <code>state</code> chamado <code>setState</code>. Você chama o método <code>setState</code> dentro da sua classe de componente assim: <code>this.setState()</code>, passando como parâmetro um objeto com pares de valor chave. As chaves são suas propriedades do estado e os valores são dados do estado atualizados. Por exemplo, se armazenássemos um <code>username</code> em state e quiséssemos atualizá-lo, ficaria assim:</p>
+
+  <pre>
+    this.setState({
+      username: 'Lewis'
+    });
+  </pre>
+
+  <p>React espera que você nunca modifique o <code>state</code> diretamente, em vez disso sempre use <code>this.setState()</code> quando as mudanças de estado ocorrerem. Além disso, você deve notar que React pode agrupar várias atualizações de estado para melhorar o desempenho. Isso significa que atualizações de estado através do método <code>setState</code> podem ser assíncronas. Existe uma sintaxe alternativa para o método <code>setState</code> que fornece uma forma de contornar esse problema. Isso raramente é necessário, mas é bom ter isso em mente! Consulte nosso artigo sobre React para saber mais detalhes.</p>
+
+  <p>Há um elemento <code>button</code> no editor de código que tem um manipulador <code>onClick()</code>. Este manipulador é acionado quando o <code>button</code> recebe um evento de clique no navegador e executa o método <code>handleClick</code> definido no <code>MyComponent</code>. Dentro do método <code>handleClick</code>, atualize o componente state usando <code>this.setState()</code>. Defina a propriedade <code>name</code> no <code>state</code> para ser igual à string <code>React Rocks!</code>.</p>
+
+  <p>Clique no botão e veja a atualização do estado renderizado. Não se preocupe se você não entender completamente como o código do manipulador de cliques funciona neste momento. Isso será tratado nos desafios futuros.</p>
+
+
+
+</body>
+
+</html>
