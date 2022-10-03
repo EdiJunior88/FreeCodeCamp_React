@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Passar uma função de callback como props</title>
+</head>
+
+<body>
+  <h1>Passar uma função de callback como props</h1>
+
+  <p>Você pode passar <code>state</code> como "props" para componentes filho, mas você não se limita a passar os dados. Você também pode passar funções manipuladoras ou qualquer método definido em um componente React para um componente filho. É assim que você permite que componentes filhos interajam com seus componentes pai. Você passa métodos para uma criança como uma propriedade regular. Tem um nome atribuído e você tem acesso a esse nome de método sob <code>this.props</code> no componente filho.</p>
+
+  <p>Existem três componentes delineados no editor de código. O componente <code>MyApp</code> é o pai que vai renderizar os componentes filhos <code>GetInput</code> e <code>RenderInput</code>. Adicione o componente <code>GetInput</code> ao método de renderização no <code>MyApp</code>, então passe uma propriedade chamada <code>input</code> atribuída a <code>inputValue</code> do <code>state</code> do <code>MyApp</code>. Também crie uma propriedade chamada handleChange e passe o manipulador de evento handleChange para ele.</p>
+
+  <p>Em seguida, adicione <code>RenderInput</code> para o método render em <code>MyApp</code>, em seguida crie uma propriedade chamada <code>input</code> e passe o <code>inputValue</code> de <code>state</code> para ela. Depois de terminar, você será capaz de digitar no campo input no componente <code>GetInput</code>, que então chama o método manipulador em seu pai via props. Isso atualiza a entrada no <code>state</code> do pai, que é passado como "props" para ambos os filhos. Observe como os dados fluem entre os componentes e como a única fonte da verdade permanece o <code>state</code> do componente pai. Reconheço que esse exemplo é um pouco inventado, mas deve servir para ilustrar como dados e callbacks podem ser passados entre componentes React.</p>
+
+</body>
+
+</html>
