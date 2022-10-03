@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Criar um input controlado</title>
+</head>
+
+<body>
+  <h1>Criar um input controlado</h1>
+
+  <p>A aplicação pode ter interações mais complexas entre <code>state</code> e a interface renderizada. Por exemplo, elementos de controle de formulário para entradas do tipo texto, assim como <code>input</code> e textarea, mantém seus próprios estados no DOM enquanto o usuário digita. Com React, você pode mover esse estado mutável para o <code>state</code> de um componente React. A entrada do usuário se torna parte do <code>state</code> da aplicação, então o React controla o valor desse campo de entrada. Tipicamente, se você tem componentes React com campos de entrada em que o usuário pode digitar, será um formulário de entrada controlado.</p>
+
+  <p>O editor de código tem o esqueleto de um componente chamado <code>ControlledInput</code> para criar um elemento controlado <code>input</code>. O <code>state</code> do componente já está inicializado com a propriedade <code>input</code> que possui uma string vazia. Esse valor representa o texto que o usuário digitou no campo <code>input</code>.</p>
+
+  <p>Primeiro, crie um método chamado <code>handleChange()</code> que tem um parâmetro chamado <code>event</code>. Quando o método é chamado, ele recebe um objeto <code>event</code> que contém a string do texto do elemento <code>input</code>. Você pode acessar essa string com <code>event.target.value</code> dentro do método. Atualize a propriedade <code>input</code> do <code>state</code> do componente com essa nova string.</p>
+
+  <p>No método <code>render</code>, crie o elemento <code>input</code> acima da tag h4. Adicione o atributo value o qual é igual a propriedade <code>input</code> do <code>state</code> do componente. Em seguida, adicione o manipulador de evento <code>onChange()</code> definido para o método <code>handleChange()</code>.</p>
+
+  <p>Quando você digita na caixa de entrada, o texto é processado pelo método <code>handleChange()</code>, definido como a propriedade <code>input</code> no local <code>state</code>, e renderizado como o valor do <code>input</code> na página. O componente <code>state</code> é a única fonte de verdade em relação aos dados de entrada.</p>
+
+  <p>Por último, mas não menos importante, não se esqueça de adicionar as ligações necessárias no construtor.</p>
+
+</body>
+
+</html>
