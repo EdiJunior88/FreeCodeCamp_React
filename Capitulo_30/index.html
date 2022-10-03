@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Passar state como props para componentes filhos</title>
+</head>
+
+<body>
+  <h1>Passar state como props para componentes filhos</h1>
+
+  <p>Você viu muitos exemplos que passaram "props" para elementos JSX filhos e componentes filho React em desafios anteriores. Você pode estar se perguntando de onde vêm essas props. Um padrão comum é ter um componente com estado contendo o <code>state</code> importante para o seu aplicativo, que depois renderiza componentes filhos. Você quer que esses componentes tenham acesso a alguns pedaços desse <code>state</code>, que são passados como "props".</p>
+
+  <p>Por exemplo, talvez você tenha um componente App que renderiza uma <code>Navbar</code>, entre outros componentes. No seu <code>App</code>, você tem <code>state</code> que contém muitas informações de usuário, mas a barra de <code>Navbar</code> só precisa acessar o nome de usuário para que possa exibi-lo. Você passa esse pedaço de <code>state</code> para o componente <code>Navbar</code> como uma prop.</p>
+
+  <p>Este padrão ilustra alguns paradigmas importantes em React. O primeiro é <i>um fluxo de dados unidirecional</i>. Estado flui em uma direção para baixo na árvore dos componentes da sua aplicação, do componente pai stateful para componentes filho. Os componentes filhos só recebem os dados do estado de que precisam. O segundo é que aplicativos de estado complexos podem ser divididos em apenas alguns, ou talvez um único componente com estado. O resto dos seus componentes simplesmente recebem o state do pai como "props" e renderizam uma interface desse estado. Isso começa a criar uma separação onde o gerenciamento de estado é tratado em uma parte do código e renderização de interface em outra. Este princípio da separação da lógica do estado da lógica da interface do usuário é um dos princípios fundamentais do React. Quando usado corretamente, torna o design de aplicações complexas e com estado muito mais fácil de gerenciar.</p>
+
+  <p>O componente <code>MyApp</code> é stateful e renderiza um componente <code>Navbar</code> como filho. Passe a propriedade <code>name</code> em seu <code>state</code> até o componente filho, em seguida, mostre o <code>name</code> na tag <code>h1</code> que faz parte da renderização do <code>Navbar</code>. <code>name</code> deve aparecer após o texto <code>Hello, my name is:</code>.</p>
+
+</body>
+
+</html>
