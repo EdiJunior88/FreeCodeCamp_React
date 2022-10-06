@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Otimizar novas renderizações com shouldComponentUpdate</title>
+</head>
+
+<body>
+  <h1>Otimizar novas renderizações com shouldComponentUpdate</h1>
+
+  <p>Até agora, se qualquer componente recebe um novo <code>state</code> ou novas <code>props</code>, ele se renderiza novamente com todos os seus filhos. Normalmente isto está ok. Mas React fornece um método de ciclo de vida que você pode chamar quando componentes filhos recebem um novo <code>state</code> ou <code>props</code>, e declarar especificamente se os componentes devem atualizar ou não. O método é <code>shouldComponentUpdate()</code>, e leva <code>nextProps</code> e <code>nextState</code> como parâmetros.</p>
+
+  <p>Esse método é uma maneira útil de otimizar o desempenho. Por exemplo, o comportamento padrão é que seu componente renderiza novamente quando recebe novas <code>props</code>, mesmo que as props não tenham mudado. Você pode usar <code>shouldComponentUpdate()</code> para evitar isso comparando as <code>props</code>. O método deve retornar um valor <code>boolean</code> que indica ao React se deve ou não atualizar o componente. Você pode comparar os "props" atuais (<code>this.props</code>) para os próximos props (<code>nextProps</code>) para determinar se você precisa atualizar ou não, e retorne <code>true</code> ou <code>false</code> de acordo.</p>
+
+  <p>O método <code>shouldComponentUpdate()</code> é adicionado em um componente chamado <code>OnlyEvens</code>. Atualmente, esse método retorna <code>true</code> então <code>OnlyEvens</code> renderiza novamente toda vez que recebe novas props. Modifique o método para que <code>OnlyEvens</code> seja atualizado somente se os <code>value</code> de suas novas <code>props</code> forem par. Clique no botão <code>Add</code> e veja a ordem dos eventos no console do seu navegador enquanto os ganchos de ciclo de vida são ativados.</p>
+
+</body>
+
+</html>
