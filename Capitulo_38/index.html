@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Usar JavaScript avançado no método de renderização do React</title>
+</head>
+
+<body>
+  <h1>Usar JavaScript avançado no método de renderização do React</h1>
+
+  <p>Nos desafios anteriores, você aprendeu como injetar o código JavaScript em JSX usando chaves <code>{ }</code> para tarefas como acessar props, passar props, acessar o state, inserir comentários em seu código e, mais recentemente, estilizar seus componentes. Estes são todos os casos de uso comuns para colocar JavaScript em JSX, mas eles não são a única maneira de você usar o código JavaScript em seus componentes do React.</p>
+
+  <p>Você também pode escrever JavaScript diretamente nos seus métodos de <code>render</code>, antes da instrução <code>return</code>, sem inseri-lo dentro de chaves. Isto é devido a ainda não estar dentro do código JSX. Quando você quiser usar uma variável mais tarde no código JSX dentro da instrução <code>return</code>, você coloca o nome da variável dentro de chaves.</p>
+
+  <p>No código fornecido, o método <code>render</code> tem um array que contém 20 frases para representar as respostas encontradas no clássico brinquedo da Bola Mágica de 1980. O evento de clique no botão está ligado ao método <code>ask</code>, então cada vez que o botão é clicado um número aleatório será gerado e armazenado como o <code>randomIndex</code> no state. Na linha 52, exclua a string <code>change me!</code> e reatribua a const <code>answer</code> para que seu código acesse aleatoriamente um índice diferente do array <code>possibleAnswers</code> a cada vez que o componente atualizar. Finalmente, insira a const <code>answer</code> dentro das tags <code>p</code>.</p>
+
+</body>
+
+</html>
