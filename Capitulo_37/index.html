@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Adicionar estilos em linha no React</title>
+</head>
+
+<body>
+  <h1>Adicionar estilos em linha no React</h1>
+
+  <p>Você pode ter percebido no último desafio que existem diversas outras diferenças de sintaxe de estilos HTML em linha em adição ao atributo <code>style</code> definido para um objeto JavaScript. Primeiro, os nomes de certas propriedades de estilo CSS usam camel case. Por exemplo, o último desafio definiu o tamanho da fonte com <code>fontSize</code> ao invés de <code>font-size</code>. Palavras com hifens como <code>font-size</code> são sintaxes inválidas para propriedades de objeto JavaScript, então React usa camel case. Como regra, qualquer propriedades de estilos com hífen são escritas usando camel case em JSX.</p>
+
+  <p>Todas as unidades de valor de comprimento das propriedades (como <code>height</code>,<code>width</code>, e <code>fontSize</code>) são assumidos para estar em <code>px</code> a não ser que seja especificado outra forma. Se você quiser usar <code>em</code>, por exemplo, você envolve o valor e as unidades em aspas, como <code>{fontSize: "4em"}</code>. Além dos valores de comprimento que tem como padrão <code>px</code>, todas os outros valores de propriedade devem estar entre aspas.</p>
+
+  <p>Se você tem um grande conjunto de estilos, você pode atribuir um <code>object</code> de estilo para uma constante para te ajudar a manter o código organizado. Declare suas constantes de estilo como variáveis globais no topo do arquivo. Inicialize a constante <code>styles</code> e atribua um <code>object</code> com três propriedades de estilo e os seus valores à constante. Dê a <code>div</code> a color (cor) <code>purple</code>, um font-size (tamanho de fonte) de <code>40</code> e um border (borda) de <code>2px solid purple</code>. Em seguida, defina o atributo <code>style</code> para ser igual a constante <code>styles</code>.</p>
+
+</body>
+
+</html>
