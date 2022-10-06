@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Usar o método do ciclo de vida componentDidMount</title>
+</head>
+
+<body>
+  <h1>Usar o método do ciclo de vida componentDidMount</h1>
+
+  <p>A maioria dos desenvolvedores web, em algum momento, precisa chamar uma rota de uma API para recuperar dados. Se você está trabalhando com React, é importante saber onde executar esta ação.</p>
+
+  <p>A melhor prática com React é colocar chamadas de API ou qualquer chamada para seu servidor no método do ciclo de vida <code>componentDidMount()</code>. Este método é chamado depois que um componente é montado no DOM. Qualquer chamada para <code>setState()</code> aqui ativará uma nova renderização do componente. Quando você chamar uma API neste método, e definir seu estado com os dados que a API retorna, ele automaticamente acionará uma atualização quando receber os dados.</p>
+
+  <p>Há uma chamada de API simulada em <code>componentDidMount()</code>. Ele define o estado após 2,5 segundos para simular a chamada de um servidor para recuperar dados. Este exemplo solicita o total de usuários ativos atuais para um site. No método de renderização, renderiza o valor de <code>activeUsers</code> no <code>h1</code> após o texto <code>Active Users</code>:. Observe o que acontece na pré-visualização e sinta-se livre para mudar o tempo limite para ver os diferentes efeitos.</p>
+
+</body>
+
+</html>
