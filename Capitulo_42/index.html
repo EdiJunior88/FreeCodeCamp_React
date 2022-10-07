@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Renderizar condicionalmente a partir das props</title>
+</head>
+
+<body>
+  <h1>Renderizar condicionalmente a partir das props</h1>
+
+  <p>Até agora, você viu como usar o <code>if/else</code>, <code>&&</code> e o operador ternário (<code>condition ? expressionIfTrue : expressionIfFalse</code>) para tomar decisões condicionais sobre o que renderizar e quando. No entanto, resta um tópico importante para discutir que permite que você combine todos esses conceitos com outro poderoso recurso do React: props. Usar props para renderizar código condicionalmente é muito comum entre desenvolvedores React — isto é, eles usam o valor de uma determinada propriedade para tomar decisões automaticamente sobre o que renderizar.</p>
+
+  <p>Neste desafio, você vai configurar um componente filho para tomar decisões de renderização com base em props. Você também usará o operador ternário, mas você pode ver como vários dos outros conceitos que foram abordados nos últimos desafios poderão ser igualmente úteis neste contexto.</p>
+
+  <p>O editor de código tem dois componentes que estão parcialmente definidos para você: um pai chamado <code>GameOfChance</code> e um filho chamado <code>Results</code>. Eles são usados para criar um jogo simples onde o usuário pressiona um botão para ver se ele vence ou perde.</p>
+
+  <p>Primeiro, você precisará de uma expressão simples que retorna aleatoriamente um valor diferente toda vez que for executado. Você pode usar Math.random(). Esse método retorna um valor entre <code>0</code> (inclusivo) e <code>1</code> (exclusivo) a cada vez que é chamado. Portanto, para probabilidades 50/50, use <code>Math.random() >= .5</code> na sua expressão. Estatísticas falando, essa expressão retornará <code>true</code> 50% das vezes, e <code>false</code> os outros 50%. No método de renderização, substitua <code>null</code> pela expressão acima para completar a declaração de variável.</p>
+
+  <p>Agora você tem uma expressão que pode usar para tomar uma decisão aleatória no código. Em seguida, você precisa implementar isso. Renderize o componente Results como filho de <code>GameOfChance</code>, e passe <code>expression</code> como uma prop chamada <code>fiftyFifty</code>. No componente Results, escreva uma expressão ternária para renderizar o elemento <code>h1</code> com o texto <code>You Win!</code> ou <code>You Lose!</code> baseado na prop <code>fiftyFifty</code> que está sendo passada de <code>GameOfChance</code>. Finalmente, certifique-se de que o método <code>handleClick()</code> está contando corretamente cada turno para que o usuário saiba quantas vezes jogou. Isso também serve para que o usuário saiba que o componente realmente atualizou caso vença ou perca duas vezes consecutivas.</p>
+
+</body>
+
+</html>
