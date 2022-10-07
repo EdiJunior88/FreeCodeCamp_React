@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Usar && para uma forma mais concisa do condicional</title>
+</head>
+
+<body>
+  <h1>Usar && para uma forma mais concisa do condicional</h1>
+
+  <p>As declarações <code>if/else</code> funcionaram no último desafio, mas há uma maneira mais concisa de alcançar o mesmo resultado. Imagine que está monitorando várias condições num componente e que pretende que diferentes elementos sejam renderizados, dependendo de cada uma destas condições. Se você escrever muitas instruções <code>else if</code> para retornar interfaces de usuário ligeiramente diferentes, você pode repetir código o que deixa espaço para erros. Ao invés disso, você pode usar o operador lógico <code>&&</code> para executar a lógica condicional de uma forma mais concisa. Isto é possível porque você quer verificar se uma condição é <code>true</code>, e se é, retorna uma marcação. Exemplo:</p>
+
+  <pre>
+    {condition && &ltp&gtmarkup&lt/p&gt}
+  </pre>
+
+  <p>Se a <code>condition</code> for <code>true</code>, a marcação será retornada. Se a condição for <code>false</code>, a operação retornará imediatamente <code>false</code> após avaliar a <code>condition</code> e não retornará nada. Você pode incluir essas declarações diretamente em seu JSX e juntar várias condições, escrevendo <code>&&</code> após cada uma. Isso permite que você lide com uma lógica condicional mais complexa em seu método <code>render()</code> sem repetir muito código.</p>
+
+  <p>Resolva o exemplo anterior novamente, para que <code>h1</code> renderize apenas se <code>display</code> for <code>true</code>, mas use o operador lógico <code>&&</code> ao invés de uma instrução <code>if/else</code>.</p>
+
+</body>
+
+</html>
