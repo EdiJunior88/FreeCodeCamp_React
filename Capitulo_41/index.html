@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Usar uma expressão ternária para renderização condicional</title>
+</head>
+
+<body>
+  <h1>Usar uma expressão ternária para renderização condicional</h1>
+
+  <p>Antes de seguir para técnicas de renderização dinâmica, há uma última maneira de usar condicionais de JavaScript incorporadas para renderizar o que você quer: o operador ternário. O operador ternário é frequentemente utilizado como um atalho para comandos <code>if/else</code> em JavaScript. Eles não são tão robustos quanto as declarações tradicionais <code>if/else</code>, mas são muito populares entre desenvolvedores React. Uma das razões para isso é devido a como JSX é compilado, instruções <code>if/else</code> não podem ser inseridas diretamente no código JSX. Você pode ter percebido isso há alguns desafios — quando uma instrução <code>if/else</code> foi necessária, estava sempre fora da instrução <code>return</code>. Expressões ternárias podem ser uma excelente alternativa se você deseja implementar a lógica condicional dentro de seu JSX. Lembre-se de que um operador ternário tem três partes, mas você pode combinar várias expressões ternárias juntas. Aqui está a sintaxe básica:</p>
+
+  <pre>
+    condition ? expressionIfTrue : expressionIfFalse;
+  </pre>
+
+  <p>O editor de código tem três constantes definidas dentro do método <code>render()</code> do componente <code>CheckUserAge</code>. Eles são chamados de <code>buttonOne</code>, <code>buttonTwo</code> e <code>buttonThree</code>. A cada uma destas é atribuída uma simples expressão JSX representando um elemento de botão. Primeiro, inicialize o estado de <code>CheckUserAge</code> com <code>input</code> e <code>userAge</code> definidos com valores de uma string vazia.</p>
+
+  <p>Uma vez que o componente está renderizando informações na página, os usuários devem ter uma maneira de interagir com ele. Dentro da instrução <code>return</code> do componente, configure uma expressão ternária que implementa a seguinte lógica: quando a página primeiro carrega, renderizar o botão de envio, <code>buttonOne</code>, para a página. Então, quando um usuário digita sua idade e clica no botão, renderize um botão diferente baseado na idade. Se um usuário inserir um número menor que 18, renderize <code>buttonThree</code>. Se um usuário inserir um número maior ou igual a <code>18</code>, renderize <code>buttonTwo</code>.</p>
+
+</body>
+
+</html>
