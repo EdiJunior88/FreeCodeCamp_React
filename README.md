@@ -60,6 +60,5 @@ Neste curso, você vai aprender a criar diferentes componentes do React, a geren
 
 <hr>
 
-#### Curso: :green_book: :books: 47 capítulos
-**Status do Curso:** :speech_balloon: **Estudando**
-
+<h4><b>Curso:</b> 📚 47 capítulos</h4>
+<h4><b>Status do Curso:</b> ✅ Concluído</h4>
