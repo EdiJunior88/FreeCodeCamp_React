@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Usar array.filter() para filtrar dinamicamente um array</title>
+</head>
+
+<body>
+  <h1>Usar array.filter() para filtrar dinamicamente um array</h1>
+
+  <p>O método de array <code>map</code> é uma ferramenta poderosa que você usará muitas vezes ao trabalhar com React. Outro método relacionado a <code>map</code> é o <code>filter</code>, o qual filtra o conteúdo de um array baseado em uma condição, em seguida retorna um novo array. Por exemplo, se você tem um array de usuários que todo usuário têm a propriedade <code>online</code> que pode ser definida como <code>true</code> ou <code>false</code>, você pode filtrar apenas aqueles usuários que estão online escrevendo:</p>
+
+  <pre>
+    let onlineUsers = users.filter(user => user.online);
+  </pre>
+
+  <p>No editor de código, o <code>state</code> de <code>MyComponent</code> é inicializado com um array de usuários. Alguns usuários estão online e outros não. Filtre o array para que você veja apenas os usuários que estão online. Para isso, primeiro use <code>filter</code> para retornar um novo array contendo apenas os usuários os quais possuem a propriedade <code>online</code> como <code>true</code>. Em seguida, na variável <code>renderOnline</code>, mapeie sobre o array filtrado e retorne um elemento <code>li</code> para cada usuário que contenha o texto de <code>username</code> de cada um. Garante que você inclua uma <code>key</code> única, como nos últimos desafios.</p>
+
+</body>
+
+</html>
