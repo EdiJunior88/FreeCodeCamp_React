@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Dar aos elementos irmãos um atributo chave único</title>
+</head>
+
+<body>
+  <h1>Dar aos elementos irmãos um atributo chave único</h1>
+
+  <p>O último desafio mostrou como o método <code>map</code> é usado para renderizar dinamicamente um número de elementos com base na entrada do usuário. No entanto, faltou uma peça importante desse exemplo. Ao criar um array de elementos, cada um precisa de um atributo <code>key</code> definido com um valor único. React usa essas chaves para manter o controle de quais itens são adicionados, alterados ou removidos. Isso ajuda a tornar o processo de re-renderização mais eficiente quando a lista é modificada de qualquer forma.</p>
+
+  <p><strong>Observação</strong>: as chaves só precisam ser únicas entre elementos irmãos, elas não precisam ser globalmente exclusivas na sua aplicação.</p>
+
+  <p>O editor de código tem uma array com alguns frameworks front-end e um componente funcional sem estado chamado <code>Frameworks()</code>. <code>Frameworks()</code> precisa mapear a matriz para uma lista não ordenada, assim como no último desafio. Finalize a escrita da função de callback de <code>map</code> para retornar um elemento <code>li</code> para cada framework no array <code>frontEndFrameworks</code>. Desta vez, certifique-se de dar a cada <code>li</code> um atributo <code>key</code>, definido como um valor único. Os elementos <code>li</code> também devem conter o texto do <code>frontEndFrameworks</code>.</p>
+
+  <p>Normalmente, você quer tornar a chave algo que identifica de forma única o elemento que está a ser renderizado. Como um último recurso, o índice da matriz pode ser usado, mas normalmente você deve tentar usar uma identificação exclusiva.</p>
+
+</body>
+
+</html>
