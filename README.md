@@ -60,5 +60,15 @@ Neste curso, você vai aprender a criar diferentes componentes do React, a geren
 
 <hr>
 
+<h3>Tempo Estudando o Curso</h3>
+
+<p>
+   <a href="https://wakatime.com/badge/github/EdiJunior88/FreeCodeCamp_React">
+    <img src="https://wakatime.com/badge/github/EdiJunior88/FreeCodeCamp_React.svg" alt="wakatime">
+   </a>
+</p>
+
+<hr>
+
 <h4><b>Curso:</b> 📚 47 capítulos</h4>
 <h4><b>Status do Curso:</b> ✅ Concluído</h4>
